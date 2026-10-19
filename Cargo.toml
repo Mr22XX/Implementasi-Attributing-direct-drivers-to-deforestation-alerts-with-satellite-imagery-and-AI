@@ -1,0 +1,25 @@
+[package]
+name = "backend"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+axum = { version = "0.7", features = ["multipart"] }
+tokio = { version = "1", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+redis = { version = "0.24", features = ["tokio-comp"] }
+reqwest = { version = "0.12", features = ["json"] }
+gcp_auth = "0.12.7"
+tower-http = { version = "0.6", features = ["cors"] }
+sqlx = { version = "0.8.3", features = ["runtime-tokio", "tls-native-tls", "postgres", "macros", "json"] }
+dotenvy = "0.15.7"
+anyhow = "1"
+argon2 = "0.5"
+jsonwebtoken = "9"
+lettre = { version = "0.11", default-features = false, features = ["builder", "smtp-transport", "tokio1", "tokio1-rustls-tls"] }
+sha2 = "0.10"
+
+[[bin]]
+name = "backend"
+path = "src/main.rs"

@@ -1,0 +1,1 @@
+"{\"result\":\"0\",\"values\":{\"0\":{\"functionInvocationValue\":{\"arguments\":{\"collection\":{\"functionInvocationValue\":{\"arguments\":{\"tableId\":{\"constantValue\":\"WWF/HydroSHEDS/v1/FreeFlowingRivers\"}},\"functionName\":\"Collection.loadTable\"}},\"color\":{\"constantValue\":\"2563eb\"},\"width\":{\"constantValue\":2}},\"functionName\":\"Collection.style\"}}}}"
